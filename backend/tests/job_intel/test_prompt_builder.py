@@ -40,3 +40,25 @@ def test_prompt_states_citation_contract() -> None:
     assert "[citation:" in prompt
     assert "局限性说明" in prompt
     assert "五个章节" in prompt
+
+
+def test_without_profile_prompt_falls_back_to_generic_gap() -> None:
+    """无画像时必须显式降级为通用差距模型，且禁止 Agent 反问短路。"""
+    prompt = build_research_prompt("字节跳动", "Agent 研发", "2026-09-23")
+    assert "通用能力差距模型" in prompt
+    assert "不得因缺少个人信息而" in prompt
+    assert "候选人画像（gap 分析以此为基准" not in prompt
+
+
+def test_with_profile_injects_block() -> None:
+    prompt = build_research_prompt(
+        "字节跳动", "Agent 研发", "2026-09-23", candidate_profile="2027 届，Java 后端背景。"
+    )
+    assert "候选人画像（gap 分析以此为基准" in prompt
+    assert "2027 届，Java 后端背景。" in prompt
+
+
+def test_profile_prompt_is_deterministic() -> None:
+    a = build_research_prompt("a", "b", "2026-09-23", candidate_profile="p")
+    b = build_research_prompt("a", "b", "2026-09-23", candidate_profile="p")
+    assert a == b

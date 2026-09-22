@@ -27,9 +27,26 @@ _LIMITATION_RULE = (
     "结尾必须附带“局限性说明”：说明哪些内容属于推断、哪些数据有时效性。"
 )
 
+#: 无头运行的运维规则：工具持续失败时果断降级，绝不空转烧预算。
+_OPERATION_RULE = (
+    "工具故障协议：若网页抓取类工具连续 2 次失败（超时/报错），立即放弃该工具，"
+    "仅基于已获得的搜索结果快照完成报告，并在局限性说明中记录哪些引用未能逐一打开核验；"
+    "严禁对持续失败的工具反复重试。"
+)
 
-def build_research_prompt(company: str, position: str, report_date: str) -> str:
-    """组装研究提示词；入参缺失或日期格式非法时抛 ``ValueError``。"""
+
+def build_research_prompt(
+    company: str,
+    position: str,
+    report_date: str,
+    candidate_profile: str | None = None,
+) -> str:
+    """组装研究提示词；入参缺失或日期格式非法时抛 ``ValueError``。
+
+    ``candidate_profile`` 提供时注入第 5 章所需的候选人画像；不提供时
+    显式指示 Agent 退化为通用能力差距模型——绝不让 Agent 因缺输入而
+    停下来反问（无头运行会因此短路）。
+    """
     if not company.strip():
         raise ValueError("company must be non-empty")
     if not position.strip():
@@ -41,6 +58,18 @@ def build_research_prompt(company: str, position: str, report_date: str) -> str:
         f"{i}. {SECTION_TITLES[key]}" for i, key in enumerate(SECTION_ORDER, start=1)
     )
 
+    if candidate_profile and candidate_profile.strip():
+        gap_block = (
+            "第 5 章候选人画像（gap 分析以此为基准，无需向用户索要更多信息）：\n"
+            f"{candidate_profile.strip()}"
+        )
+    else:
+        gap_block = (
+            "未提供候选人画像：第 5 章请基于该岗位典型任职要求输出通用能力差距模型，"
+            "并在章首标注“未提供个人简历，以下为通用模型”。不得因缺少个人信息而"
+            "暂停输出或向用户反问。"
+        )
+
     parts = [
         _ROLE,
         "",
@@ -51,10 +80,15 @@ def build_research_prompt(company: str, position: str, report_date: str) -> str:
         _STRUCTURE_RULES,
         structure_lines,
         "",
+        gap_block,
+        "",
         _CITATION_RULES,
         "",
         _LIMITATION_RULE,
         "",
-        "产出要求：直接输出 Markdown 正文，不要输出与本报告无关的寒暄或解释。",
+        _OPERATION_RULE,
+        "",
+        "产出要求：直接输出 Markdown 正文，不要输出与本报告无关的寒暄或解释；"
+        "不得以任何理由中途暂停索要补充材料。",
     ]
     return "\n".join(parts)
