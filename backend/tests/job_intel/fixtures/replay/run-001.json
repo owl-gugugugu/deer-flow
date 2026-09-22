@@ -1,0 +1,34 @@
+{
+  "recording": "synthetic-seed",
+  "note": "非真实录制：M2 冒烟（3 家公司真实运行）产生的录制件将以此格式追加为 run-002+。本文件仅用于在真实录制到位前保持回放契约测试可执行。",
+  "recorded_at": "2026-09-23",
+  "model": "glm-5.3-flash",
+  "source_run": "pending-m2-smoke",
+  "report_input": {
+    "company": "示例科技",
+    "position": "Agent 研发工程师",
+    "report_date": "2026-09-23",
+    "sections": {
+      "business": {
+        "content": "示例公司为虚构占位。[citation:36氪-豆包成字节最凶猛的进化](https://www.36kr.com/p/3452409797934466)",
+        "citations": ["https://www.36kr.com/p/3452409797934466", "https://awtmt.com/articles/3780150"]
+      },
+      "dynamics": {
+        "content": "占位正文。[citation:腾讯新闻-整合TRAE与扣子](https://news.qq.com/rain/a/20260824A0BYTE00)",
+        "citations": ["https://news.qq.com/rain/a/20260824A0BYTE00"]
+      },
+      "interview": {
+        "content": "占位正文。[citation:InfoQ-大厂Agent面试真题](https://www.infoq.cn/article/great-agent-interview-2025)",
+        "citations": ["https://www.infoq.cn/article/great-agent-interview-2025"]
+      },
+      "salary": {
+        "content": "占位正文（推断）。[citation:样本A](https://example.com/salary-a) [citation:样本B](https://example.com/salary-b)",
+        "citations": ["https://example.com/salary-a", "https://example.com/salary-b"]
+      },
+      "gap": {
+        "content": "占位正文。[citation:自评](https://example.com/gap-note)",
+        "citations": ["https://example.com/gap-note"]
+      }
+    }
+  }
+}

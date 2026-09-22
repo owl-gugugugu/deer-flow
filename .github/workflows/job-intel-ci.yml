@@ -1,0 +1,27 @@
+name: job-intel-ci
+
+on:
+  push:
+    branches: [main, job-intel]
+  pull_request:
+    branches: [main, job-intel]
+  workflow_dispatch:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: backend
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install test deps
+        run: pip install pytest pytest-cov
+
+      - name: Run job_intel suite (coverage gate >= 80%)
+        run: pytest tests/job_intel/ --cov=job_intel --cov-report=term-missing --cov-fail-under=80
