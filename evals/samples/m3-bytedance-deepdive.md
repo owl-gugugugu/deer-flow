@@ -1,0 +1,128 @@
+# 岗位情报报告：字节跳动「Flow 创意 Agent 技术研发」（2027 届校招）
+
+**报告日期**：2026-09-24 ｜ **用途**：投递决策参考 ｜ **口径说明**：仅汇总公开信息；推断内容均显式标注；核心画像参考已核实的 M1 分析 [citation:M1-字节Flow创意Agent岗位分析](https://raw.githubusercontent.com/owl-gugugugu/deer-flow/job-intel/evals/samples/m1-first-report.md)
+
+---
+
+## 1. 业务线与技术栈画像
+
+**组织定位。** Flow 是字节跳动专注 AI 应用层研发的业务部门，2023 年 11 月在内部成立，早期由技术副总裁洪定坤与字节大模型团队负责人朱文佳主导 [citation:新京报-黄文灏加盟字节](https://m.bjnews.com.cn/detail/1724840475168667.html)。豆包、猫箱、星绘以及豆包爱学、Gauthmath 等产品均隶属 Flow，由原 TikTok 负责人朱骏统一负责 [citation:晚点独家-星绘并入豆包](https://c.m.163.com/news/a/JTPQAITS0531M1CO.html)。旗舰产品豆包 DAU 已突破 1 亿，且是字节历史上推广费用最低的破亿产品 [citation:36氪-豆包DAU破亿](https://eu.36kr.com/zh/p/3609313072153862)；猫箱、星绘两条线均达百万 DAU 量级，猫箱已跑通商业化闭环 [citation:ZAKER-字节AI产品负责人离职创业](https://app.myzaker.com/news/article.php?pk=6a2a16ce8e9f090f4473104a)。
+
+**组织整合。** 2026 年 8 月 6 日年中全员会上，TRAE 与扣子（Coze）并入豆包，豆包成为字节 AI 办公/生产力业务主干，并推出统一办公品牌「豆包工作」[citation:华尔街见闻-TRAE扣子并入豆包](https://awtmt.com/articles/3780150) [citation:腾讯新闻-整合TRAE与扣子](https://news.qq.com/rain/a/20260824A0BYTE00)。TRAE 官网当前展示的 TraeWork 已接入豆包 2.1 等模型，覆盖 PPT 生成、数据分析、深度研究等办公场景 [citation:TRAE官网](https://www.trae.cn/)。
+
+**「创意 Agent」的业务射程（推断）。** 该岗位官方 JD 原文在公开网络无法直接获取（官网职位页存在抓取限制）。推断：该岗位大概率服务于豆包/即梦/Coze 中「生成式创作链路的 Agent 化」——用 LLM 编排多模态生成模型，把模糊的用户意图变成可控的多步创作流程。推断依据：字节已发布豆包·图像创作模型 Seedream 4.0 [citation:火山引擎Agent社区-Seedream4.0发布](https://developer.volcengine.com/articles/7599494661565005870)，第三方评测称其登顶 Artificial Analysis 文生图与图像编辑双榜第一 [citation:掘金-Seedream4.0体验](https://juejin.cn/post/7552589302615506978)，且其使用入口覆盖豆包、即梦、扣子三大产品 [citation:Cursor博客-Seedream4.0使用指南](https://www.cursor-ide.com/blog/seedream-4-0-online)；M1 分析亦将该岗位职责画像为「创意理解→方案规划→多步生成→自我评估与重试闭环」[citation:M1-字节Flow创意Agent岗位分析](https://raw.githubusercontent.com/owl-gugugugu/deer-flow/job-intel/evals/samples/m1-first-report.md)。
+
+**技术栈主线。** 通用能力主线：LLM 基本概念 → Prompt → RAG → Function Calling → MCP → Agent → 评测/测试 [citation:阿里云开发者-校招技术岗观察](https://developer.aliyun.com/article/1764265)。字节系自研体系包括：豆包 Doubao-Seed 1.6 系列模型 [citation:火山引擎-Doubao-Seed-1.6文档](https://www.volcengine.com/docs/82379/1666946)；Eino——Go 语言版大模型应用开发框架 [citation:InfoQ-Eino框架解读](https://www.infoq.cn/article/eino-golang-llm-application-framework)；DeerFlow 与扣子开源双项目 Coze Studio / Coze Loop（2025 年 7 月 26 日开源，Apache 2.0 协议，内置 Prompt、RAG 等核心能力）[citation:CSDN-扣子宣布开源](https://blog.csdn.net/taotaocwl/article/details/149659602) [citation:53AI-CozeStudio解读](https://www.53ai.com/news/OpenSourceLLM/2025072758739.html)；以及 UI-Tars、AgentKit 等 [citation:M1-字节Flow创意Agent岗位分析](https://raw.githubusercontent.com/owl-gugugugu/deer-flow/job-intel/evals/samples/m1-first-report.md)。
+
+---
+
+## 2. 近六个月技术与组织动态（2026-03 ~ 2026-09）
+
+1. **组织大整合（2026-08-06）**：TRAE 与扣子并入豆包、发布「豆包工作」，AI 生产力成为 Flow 主干叙事 [citation:华尔街见闻-TRAE扣子并入豆包](https://awtmt.com/articles/3780150) [citation:腾讯新闻-整合TRAE与扣子](https://news.qq.com/rain/a/20260824A0BYTE00)。对求职者的含义（推断）：校招坑位将更集中在豆包主干及创意生成链路，团队归属可能在入职前后继续调整。
+2. **战略转向 AI 生产力（2026-08）**：行业集体收缩 AI 恋爱/陪伴类产品，字节把重心压向 AI 办公与创作生产力 [citation:南都-AI陪伴产品停服潮](https://m.mp.oeeee.com/a/BAAFRD0000202608111641999.html)。猫箱/星绘负责人更替、星绘并入豆包等调整亦有公开报道（原报道时间未能核验）[citation:晚点独家-星绘并入豆包](https://c.m.163.com/news/a/JTPQAITS0531M1CO.html)。
+3. **校招节奏大幅提前、AI 岗集中放量（2026-06 ~ 2026-09）**：8 月以来多家头部企业启动 2027 届校招 [citation:21财经-聚焦重点群体稳就业](https://m.21jingji.com/article/20260907/herald/97af4d318e485d47d58e64ee1442e2ff.html)；字节在 7 月中旬即开启 AI 产品经理早鸟通道、线下闭门面试最快 2 天直通校招 offer，AI 岗大幅扩招且「AI+X」复合能力受青睐 [citation:新浪-大厂AI岗大幅扩招](https://k.sina.com.cn/article_1893892941_70e2834d020022lva.html)；同季淘天 6 月 29 日率先开放提前批、腾讯 TEG 7 月 11 日跟进，百度 AIDU、京东 TGT 等专项同步抢人 [citation:劳动报-2027届秋招提前批](https://www.51ldb.com/shsldb/zc/content/019fcba0c1ffc001000066d533acd97d.html)。
+4. **提前批政策**：字节秋招提前批「无笔试、直通面试」在牛客内推帖中持续出现（帖内未标注具体年份时点，推断 2026 季沿用）[citation:牛客-字节提前批无笔试](https://www.nowcoder.com/discuss/353158158757601280)。
+5. **用户规模持续爬坡**：豆包 DAU 于 2025 年 12 月底官宣破亿 [citation:腾讯新闻-豆包DAU破亿](https://news.qq.com/rain/a/20251228A01KAD00)；更近期的行业播客标题提及豆包 DAU 已达 1.4 亿量级（发布时点未核验，推断在 2026 年内）[citation:小宇宙-豆包1.4亿DAU](https://www.xiaoyuzhoufm.com/episode/69ec23581d989496e7748d38)。年初火山引擎成为 2026 央视春晚独家 AI 云合作伙伴、豆包配合上线互动玩法 [citation:网易-豆包DAU破亿报道](https://m.163.com/dy/article/KHIMA00H05118DFD.html)。规模扩张意味着创意 Agent 有真实的落地场景与流量底盘（推断）。
+
+---
+
+## 3. 面经要点聚合
+
+> 样本说明：Flow「创意 Agent」专属面经在公开渠道样本稀少（JD 未公开），以下为字节通用技术面 + 同类 Agent/大模型应用岗面经的聚合，投递前请以实际面试为准。
+
+**流程与形式。** 提前批可免笔试直通面试 [citation:牛客-字节提前批无笔试](https://www.nowcoder.com/discuss/353158158757601280)；正式批为 1 轮笔试 + 3 轮技术面 + 1 轮 HR 面 [citation:字节跳动校园招聘官网](https://jobs.bytedance.com/campus) [citation:M1-字节Flow创意Agent岗位分析](https://raw.githubusercontent.com/owl-gugugugu/deer-flow/job-intel/evals/samples/m1-first-report.md)。三轮技术面的侧重划分（一面计算机基础+手撕、二面项目深挖+场景设计、三面综合+ leader 视角）为推断，依据是 M1 聚合的考察重心与大厂通行做法 [citation:M1-字节Flow创意Agent岗位分析](https://raw.githubusercontent.com/owl-gugugugu/deer-flow/job-intel/evals/samples/m1-first-report.md)。
+
+**考察重心。** 计算机基础深挖 + 手撕算法（LeetCode medium-hard）+ 项目深挖 + LLM/Agent 专项八股 [citation:M1-字节Flow创意Agent岗位分析](https://raw.githubusercontent.com/owl-gugugugu/deer-flow/job-intel/evals/samples/m1-first-report.md)。牛客 27 届秋招讨论区已出现字节后端从业者围绕「Skill 的多后端可插拔加载」等 Agent 工程话题的讨论，提示 Agent 工程化话题正进入字节面试语境 [citation:牛客-27届秋招有多难](https://www.nowcoder.com/creation/subject/bff6bef8a4d648168a8ac3b197f94ae5)。
+
+**Agent/LLM 专项高频范围（同类岗位佐证）。** 建议覆盖：LLM 基本概念 → Prompt → RAG → Function Calling → MCP → Agent → 评测这条主线 [citation:阿里云开发者-校招技术岗观察](https://developer.aliyun.com/article/1764265)。同类大模型应用岗面经的问题高度集中于 RAG 工程细节（分块、检索质量等）与「Function Calling 如何解析用户意图」等 [citation:技术派-美团大模型应用面经](https://paicoding.com/meituan-rag-interview-questions)；AI Agent 岗已成为 2027 提前批面试的高热品类，需按「项目深挖 + 专项追问」双重准备 [citation:牛客-拼多多提前批AI Agent面经](https://www.nowcoder.com/feed/main/detail/d25578bc10b148129338c8c8016cd487)。
+
+---
+
+## 4. 薪资带宽估计（仅汇总公开数据）
+
+**公开锚点：**
+
+| # | 数据点 | 口径 | 来源 |
+|---|--------|------|------|
+| 1 | 字节应届生薪资「基本维持互联网一线梯队」 | offershow 口径，2025-11 发帖 | [citation:技术派-字节应届薪资](https://paicoding.com/article/detail/2532205792595968) |
+| 2 | 26 届大厂校招总包报道区间 35–80 万 | 含算法岗与 SP/SSP 全谱系 | [citation:网易-26届校招薪资](https://www.163.com/dy/article/KMHCO62305169TBH.html) |
+| 3 | AI 相关岗显著溢价：AI 测试开发年薪 35–45 万 vs 传统测试 16–18 万 | 2026-05 一线互联网硕士 offer 统计 | [citation:阿里云开发者-校招技术岗观察](https://developer.aliyun.com/article/1764265) |
+| 4 | 历史参照：算法岗月薪 20–25k × 15.5 ≈ 年薪 30–39 万 | 2020 届硕士，仅作历史锚点 | [citation:量子位-应届生Offer薪资](https://www.qbitai.com/2020/10/19546.html) |
+
+**带宽推断（本科 · 后端/Agent 应用研发 · 北京，均为主观推断）：**
+
+- 白菜档：总包约 **35–45 万**（推断依据：锚点 1 的一线梯队定位 + 锚点 3 的 AI 岗溢价，按 15 薪及房补/签字费惯例折算）；
+- SP/SSP 档：总包 **45–60 万+**（推断依据：锚点 2 区间上半区）；
+- Flow 属高热 AI 部门，实际给包偏区间上沿的概率较大（推断，无直接公开数据支撑）。
+
+⚠️ 薪资数据时效性极强，公开晒薪存在幸存者偏差，请以 OfferShow/牛客最新晒帖与本人 offer 实例为准。
+
+---
+
+## 5. 与目标简历的差距分析
+
+**候选人基准**：2027 届本科·北邮信息工程；Java 后端双项目（DDD 视频监控平台：SIP/FFmpeg 多路转码/Milvus+LLM API/SSE；秒杀：Redis 三层拦截/RabbitMQ 异步/Redisson/G1 调优）；Agent 方向精读 PocketFlow 与 LangGraph 执行引擎源码，基于 deer-flow 交付 job_intel 技能包（34 测试、98% 覆盖）。
+
+| 岗位要求（画像） | 候选人现状 | 判定 |
+|---|---|---|
+| Agent 编排框架原理（工作流引擎/多智能体/调度） | LangGraph 通道模型/superstep/批量写入源码级理解 + PocketFlow 精读 | ✅ 强匹配，核心亮点 |
+| 开源生态亲和 | deer-flow 实战与字节自研开源项目 DeerFlow 直接同源 | ✅ 差异化记忆点 |
+| 后端工程与高并发 | 秒杀全链路 + 多路转码并发 + SSE 流式 | ✅ 强匹配；需主动建立「并发工程→Agent 服务化（背压/批量写入/资源隔离）」的迁移叙事 |
+| 语言生态 | Java 为主；而字节 Agent 基建以 Go（Eino）[citation:InfoQ-Eino框架解读](https://www.infoq.cn/article/eino-golang-llm-application-framework) 与 Python（DeerFlow）为主 | ⚠️ 差距 1：补 Go/Python 工程化 |
+| 长上下文与 Memory 管理 | 无 Memory 系统项目实践，而岗位职责画像明确包含记忆管理 [citation:M1-字节Flow创意Agent岗位分析](https://raw.githubusercontent.com/owl-gugugugu/deer-flow/job-intel/evals/samples/m1-first-report.md) | ⚠️ 差距 2 |
+| RAG 优化 | 仅有应用级 RAG 聚合，缺检索优化（分块/embedding/重排/评测），同类面经重点考 RAG [citation:技术派-美团大模型应用面经](https://paicoding.com/meituan-rag-interview-questions) | ⚠️ 差距 3 |
+| 评测与可观测性 | 有软件测试素养（98% 覆盖）但非 LLM eval（轨迹/基准/回归评测）[citation:阿里云开发者-校招技术岗观察](https://developer.aliyun.com/article/1764265) | ⚠️ 差距 4 |
+| 多模态生成编排 | 无实践；创意场景的核心对象即 Seedream 类生成模型 [citation:火山引擎Agent社区-Seedream4.0发布](https://developer.volcengine.com/articles/7599494661565005870) | ⚠️ 差距 5 |
+| 强化学习 | 无实践；对应用研发岗大概率非硬性要求（推断：M1 技术栈主线未列 RL） | ⚠️ 差距 6（低优先级） |
+
+**投递前行动建议（按优先级）：**
+
+1. **P0**：在 job_intel 技能包上扩展 Memory 模块（会话持久化/摘要压缩）与 RAG 评测指标（召回率/忠实度），把「98% 单测覆盖」叙事升级为「LLM 应用质量工程」；
+2. **P0**：本地部署开源 Coze Studio [citation:CSDN-扣子宣布开源](https://blog.csdn.net/taotaocwl/article/details/149659602)，输出《LangGraph vs Eino vs Coze 工作流模型对比》笔记——直接进入字节技术语境，面试差异度最高；
+3. **P1**：用 Go 跑通 Eino 最小 Agent，或以 Python 向 DeerFlow 提交贡献，弥补语言生态短板 [citation:InfoQ-Eino框架解读](https://www.infoq.cn/article/eino-golang-llm-application-framework)；
+4. **P1**：算法保持 medium-hard 强度手撕训练 [citation:M1-字节Flow创意Agent岗位分析](https://raw.githubusercontent.com/owl-gugugugu/deer-flow/job-intel/evals/samples/m1-first-report.md)；
+5. **P2**：做一个多模态编排小项目（Agent 调用图像生成 API + 自评重试闭环），对齐「创意 Agent」场景。
+
+**投递结论（推断）**：候选人具备「编排框架源码理解 + 高并发工程 + 开源实证」三张牌，与该岗位画像的匹配度高于典型 Java 后端应届生；主要风险在语言生态与 Memory/RAG/评测三处项目级空白。建议以提前批（免笔试）通道优先投递，并用 P0 项在 4–6 周内补齐面诉短板。
+
+---
+
+## 局限性说明
+
+1. **工具故障记录**：本次调研中网页抓取类工具连续 2 次超时失败（Jina API ConnectTimeout），已按故障协议放弃该工具。因此**未能逐一打开核验**的引用包括：M1/M2 报告原文、InfoQ、火山引擎文档、36氪、华尔街见闻、腾讯新闻、南都、字节校招官网、劳动报等。其中 M1 报告内容来自用户提供的「已核实资料」快照，其余新增引用均来自本次搜索结果的快照，未逐页复核原文。
+2. **推断项清单**：岗位职责与业务射程（JD 原文未公开）、三轮技术面的侧重划分、第 4 章全部薪资带宽数字、团队语言栈构成、RL 非硬性要求、部分动态时点（Seedream 4.0 发布时间、猫箱/星绘组织调整时间、豆包 1.4 亿 DAU 的统计时点、提前批免笔试在 2027 季的沿用情况）。
+3. **时效性提示**：校招政策（提前批/免笔试/HC 数量）、组织架构、薪资带宽均具强时效性，可能随秋招推进快速变化，投递前请以 jobs.bytedance.com 官网与最新晒 offer 数据为准；豆包 DAU 等运营数据为媒体披露口径，非公司财报数据。
+
+## Sources
+
+- [M1-字节Flow创意Agent岗位分析](https://raw.githubusercontent.com/owl-gugugugu/deer-flow/job-intel/evals/samples/m1-first-report.md) - 内部评测库已核实样本报告
+- [新京报-黄文灏加盟字节](https://m.bjnews.com.cn/detail/1724840475168667.html) - Flow 部门成立背景
+- [晚点独家-星绘并入豆包](https://c.m.163.com/news/a/JTPQAITS0531M1CO.html) - Flow 产品线与负责人信息
+- [36氪-豆包DAU破亿](https://eu.36kr.com/zh/p/3609313072153862) - 豆包用户规模
+- [ZAKER-字节AI产品负责人离职创业](https://app.myzaker.com/news/article.php?pk=6a2a16ce8e9f090f4473104a) - 猫箱/星绘运营与商业化
+- [华尔街见闻-TRAE扣子并入豆包](https://awtmt.com/articles/3780150) - 2026-08-06 组织整合
+- [腾讯新闻-整合TRAE与扣子](https://news.qq.com/rain/a/20260824A0BYTE00) - 「豆包工作」品牌整合
+- [TRAE官网](https://www.trae.cn/) - TraeWork 产品现状
+- [火山引擎Agent社区-Seedream4.0发布](https://developer.volcengine.com/articles/7599494661565005870) - 创意生成模型动态
+- [掘金-Seedream4.0体验](https://juejin.cn/post/7552589302615506978) - Artificial Analysis 双榜第一
+- [Cursor博客-Seedream4.0使用指南](https://www.cursor-ide.com/blog/seedream-4-0-online) - Seedream 入口覆盖
+- [阿里云开发者-校招技术岗观察](https://developer.aliyun.com/article/1764265) - AI 岗溢价与技能路径
+- [火山引擎-Doubao-Seed-1.6文档](https://www.volcengine.com/docs/82379/1666946) - 字节自研模型
+- [InfoQ-Eino框架解读](https://www.infoq.cn/article/eino-golang-llm-application-framework) - Go 版 LLM 应用框架
+- [CSDN-扣子宣布开源](https://blog.csdn.net/taotaocwl/article/details/149659602) - Coze Studio/Loop 开源
+- [53AI-CozeStudio解读](https://www.53ai.com/news/OpenSourceLLM/2025072758739.html) - Coze Studio 能力解读
+- [21财经-聚焦重点群体稳就业](https://m.21jingji.com/article/20260907/herald/97af4d318e485d47d58e64ee1442e2ff.html) - 27 届校招启动
+- [新浪-大厂AI岗大幅扩招](https://k.sina.com.cn/article_1893892941_70e2834d020022lva.html) - 字节早鸟通道与扩招
+- [劳动报-2027届秋招提前批](https://www.51ldb.com/shsldb/zc/content/019fcba0c1ffc001000066d533acd97d.html) - 大厂提前批节奏
+- [南都-AI陪伴产品停服潮](https://m.mp.oeeee.com/a/BAAFRD0000202608111641999.html) - 战略转向生产力
+- [腾讯新闻-豆包DAU破亿](https://news.qq.com/rain/a/20251228A01KAD00) - DAU 破亿官宣
+- [小宇宙-豆包1.4亿DAU](https://www.xiaoyuzhoufm.com/episode/69ec23581d989496e7748d38) - DAU 规模更新信号
+- [网易-豆包DAU破亿报道](https://m.163.com/dy/article/KHIMA00H05118DFD.html) - 2026 春晚合作
+- [字节跳动校园招聘官网](https://jobs.bytedance.com/campus) - 校招流程官方口径
+- [牛客-字节提前批无笔试](https://www.nowcoder.com/discuss/353158158757601280) - 提前批政策
+- [牛客-27届秋招有多难](https://www.nowcoder.com/creation/subject/bff6bef8a4d648168a8ac3b197f94ae5) - Agent 工程话题讨论
+- [牛客-拼多多提前批AI Agent面经](https://www.nowcoder.com/feed/main/detail/d25578bc10b148129338c8c8016cd487) - 同类岗位面经
+- [技术派-美团大模型应用面经](https://paicoding.com/meituan-rag-interview-questions) - RAG/Function Calling 高频题
+- [技术派-字节应届薪资](https://paicoding.com/article/detail/2532205792595968) - offershow 口径薪资
+- [网易-26届校招薪资](https://www.163.com/dy/article/KMHCO62305169TBH.html) - 35–80 万总包区间
+- [量子位-应届生Offer薪资](https://www.qbitai.com/2020/10/19546.html) - 历史薪资锚点
