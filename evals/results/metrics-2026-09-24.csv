@@ -1,0 +1,7 @@
+company,position,report_file,citations_total,citations_reachable,citations_dead,citations_unreachable,reachability_rate,citations_effective,effectiveness_rate,structure_completeness,violations
+字节跳动,Flow 创意 Agent 技术研发,m1-first-report.md,26,20,0,6,0.7692,0,0.0,0.2857,missing section header: 业务线与技术栈画像;missing section header: 近六个月技术与组织动态;missing section header: 面经要点聚合;missing section header: 薪资带宽估计（仅汇总公开数据）;missing section header: 与目标简历的差距分析;structure-missing:业务线与技术栈画像;structure-missing:近六个月技术与组织动态;structure-missing:面经要点聚合;structure-missing:薪资带宽估计（仅汇总公开数据）;structure-missing:与目标简历的差距分析
+阿里巴巴,Agent 研发工程师,m2-alibaba.md,31,16,0,15,0.5161,0,0.0,1.0,
+腾讯,Agent 应用研发工程师,m2-tencent.md,30,30,0,0,1.0,0,0.0,1.0,
+美团,LLM Agent 后端研发工程师,m2-meituan.md,29,29,0,0,1.0,0,0.0,1.0,
+字节跳动,Flow 创意 Agent 深挖（RAG 增强）,m3-bytedance-deepdive.md,31,30,0,1,0.9677,0,0.0,1.0,
+SUMMARY,,,147,125,,,0.8503,0,0.0,0.8571,
