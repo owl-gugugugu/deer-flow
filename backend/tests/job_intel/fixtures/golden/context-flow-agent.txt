@@ -1,0 +1,11 @@
+[1] 字节 2027 校招 Flow Agent 岗 (https://jobs.bytedance.com/flow-agent)
+字节 2027 校招 Flow Agent 岗
+负责豆包创意 Agent 技术研发，Multi-Agent 框架与评测机制建设。
+
+[2] 牛客面经：Agent 岗手撕真题 (https://www.nowcoder.com/discuss/900446)
+牛客面经：Agent 岗手撕真题
+手撕合并 K 个升序链表；追问 Function Calling 与 MCP 的区别。
+
+[3] 无关条目 (https://example.com/unrelated)
+无关条目
+今天天气不错，适合出门散步。
