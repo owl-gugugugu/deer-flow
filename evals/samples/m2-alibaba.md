@@ -1,0 +1,67 @@
+# 岗位情报报告：阿里巴巴 Agent 研发工程师（2027 届校招）
+
+**报告日期：2026-09-23** | **用途：投递决策参考**
+
+---
+
+## 1. 业务线与技术栈画像
+
+Agent 研发岗在阿里巴巴的归属已高度集中：2026 年 3 月 16 日成立的 **Alibaba Token Hub（ATH）事业群**整合了通义实验室、MaaS、千问（Qwen）事业部、悟空事业部（原钉钉）与 AI 创新事业部，与阿里云智能事业群、电商事业群并行，由 CEO 吴泳铭直接管理 [citation:华盛通 ATH 成立快讯](https://www.hstong.com/live/2503171952006025602)[citation:钛媒体·ATH 深度解读](https://www.tmtpost.com/nicheng/8045543.html)。校招层面，ATH 旗下的 Token Foundry（2027 秋招）招聘大模型/千问/多模态/开源方向核心研发，千问办公（AI 原生办公品牌）等新实体也在独立启动 27 届校招 [citation:HI简历·Token Foundry 27秋招](https://hicv.cn/xiaozhao/alibaba-token-foundry-2027-graduate-recruitment-12256-8ed111)[citation:HI简历·千问办公27秋招](https://hicv.cn/xiaozhao/alibaba-qianwen-2027-autumn-recruit-12245-745b6c)。
+
+技术栈呈"双轨"特征，对 Java 背景候选人友好：其一，官方开源的 **Spring AI Alibaba（SAA）** 基于 Spring Boot 3.x，提供 Graph 多代理框架、状态机工作流编排、Flow 预置应用、Multi-Agent 架构，并集成 Nacos/Sentinel，已支持对接 OpenAI/DeepSeek/Qwen [citation:Spring AI Alibaba 官网](https://java2ai.com)[citation:CSDN·SAA Graph 架构与多代理集成](https://blog.csdn.net/weixin_47347755/article/details/148978496)；其二，**AgentScope** 多智能体平台内置记忆、RAG、工具调用与代码执行模块，2.0 版面向企业级智能体应用，并推出 Java 版本 [citation:AI工具集·AgentScope](https://www.ai-bot.cn/agentscope/)。模型层以 Qwen 全家桶为底座（Qwen3-Max、Qwen-CUA 计算机操作智能体、QwenCode 等多形态落地）[citation:Toolin·Qwen 全家桶汇总](https://www.toolin.cn/trends/item/detail?id=2600)[citation:ConvoMedia·千问多形态生态](https://convomedia.com/2025/09/26/阿里的千问：多形态落地的开源ai生态/)。
+
+## 2. 近六个月技术与组织动态
+
+- **2026-03-16**：ATH 事业群成立，悟空事业部同周举办首场发布会、面向 B 端 AI 市场推出通义千问驱动的新品 [citation:钛媒体·ATH 深度解读](https://www.tmtpost.com/nicheng/8045543.html)[citation:什么值得买·悟空首秀](https://post.m.smzdm.com/p/a8w6077d/)。
+- **2026-03-18**：2027 届实习生招聘全球启动，16 个业务集团同时开招（阿里云、淘天、淘宝闪购、阿里国际、通义实验室、悟空事业部、千问事业部、平头哥等），较以往新增七类 AI 岗位，AI 相关岗位占比超八成 [citation:界面新闻](https://m.jiemian.com/article/14129015_microcontent.html)[citation:中国江苏网](https://jsnews.jschina.com.cn/jsyw/202603/t20260318_s69ba8232e4b0115ac0765192.shtml)。
+- **2026-05-14**：阿里 FY2026 财报披露，云智能集团季度营收同比增长 38%，AI 相关产品收入连续 11 个季度三位数增长 [citation:21世纪经济报道](https://m.21jingji.com/article/20260514/herald_d7e9f1abf18ce73693cbe26682701336.html)。
+- **2026-06-29**：淘天集团率先开放 2027 届校招提前批，"阿里星顶尖人才计划"同步启动，覆盖多模态大模型、AI 智能体方向 [citation:劳动报](https://www.51ldb.com/shsldb/zc/content/019fcba0c1ffc001000066d533acd97d.html)。
+- **2026-07 下旬**：ATH 内部再调整，通义万相团队并入"未来生活实验室"，组织仍处整合期 [citation:3e生活·Token Foundry 调整报道](https://www.3elife.com/news/1845516165219454978)。
+- **持续动态**：Qwen3.5 系列发布后核心人才出现流失（Qwen Code 负责人惠彬 2026 年 1 月加入 Meta、核心贡献者 Kaixin Li 离职），团队处于补员窗口 [citation:凤凰网科技·Qwen3.5 人才流向报道](https://news.ifeng.com/c/9iJHFLcQ3rQ)；Qwen3.6-Max-Preview 与 Qwen3Guard 等后续开源仍在持续 [citation:linux.do 社区·Qwen3.6-Max-Preview 发布讨论](https://linux.do/t/topic/897594)。C 端千问 App 已公测，约 2.5 亿用户通过其智能体功能体验 AI 购物 [citation:美济号·千问App AI购物](https://www.mjzj.com/sheji/172040.html)。
+- **节奏**：据阿里校招官网消息，2027 届应届生招聘（正式批）已于 8 月 4 日启动 [citation:新浪财经·2027届校招汇总](https://finance.sina.com.cn/wm/2026-08-06/doc-inimkfvf4597178.shtml)。**推断**：正式批网申已开约 7 周，核心 AI 岗 HC 高峰期大概率在 9–10 月进入集中面试，投递时间窗口正在收窄；依据是提前批 6 月 29 日启动、各厂 27 届节奏显著提前于往年。
+
+## 3. 面经要点聚合
+
+样本有限（公开快照级信息），按主题归纳：
+
+- **岗位形态变化**：牛客有阿里前端候选人披露，校招岗位名称已由"前端工程师"统一调整为"**Agent 开发全栈工程师**"，面试围绕前端技术栈与 Agent 应用开发展开 [citation:牛客·阿里前端面经帖](https://www.nowcoder.com/discuss/353154474258669568)。**推断**：研发序列岗位 Agent 化是集团层面动作，后端序列亦将向 Agent 应用研发靠拢；依据是新增七类 AI 岗位的官方口径 [citation:中国江苏网](https://jsnews.jschina.com.cn/jsyw/202603/t20260318_s69ba8232e4b0115ac0765192.shtml)。
+- **AI 能力成为分水岭**：阿里云开发者社区披露，测试岗 HC 下降约 40% 后，候选人被按 AI 能力分成"两种"，并给出对照技能链：LLM 基本概念 → Prompt → RAG → Function Calling → MCP → Agent → AI 应用测试 [citation:阿里云开发者社区·校招测试岗分析](https://developer.aliyun.com/article/1764264)。掘金文章称 AI 岗位渗透率已达 37.56%，架构面出现"请求→网关→后端→AI Agent 意图识别→调用大模型 API 推理"的场景图设计题 [citation:掘金·AI岗位渗透率与三面架构图](https://juejin.cn/post/7685895088702308392)。
+- **后端硬功仍是基本盘**：27 届校招后端热题包括"项目中如何用 Redis 实现分布式 Session"等中间件场景题 [citation:面试鸭·27届校招热题](https://www.mianshiya.com/)；历史淘天 M2C 实习面经以自我介绍、实习项目深挖、本地缓存与 Redis、equals/hashCode 为主线，可作为传统轮次结构参照（注意其为 2024 年内容）[citation:CSDN·淘天实习面经](https://blog.csdn.net/2401_86237735/article/details/137074231)。
+- **大模型方向提问深度参照**：同期竞对（百度多模态大模型岗）一面包含 PPO/GRPO/DPO 区别、GRPO 训练加速场景题，说明"Agent 研发"若贴近模型侧会被问到 RL 基础；此为行业参照，非阿里面经 [citation:牛客·百度多模态大模型一面](https://www.nowcoder.com/discuss/928763560312700928)。此外，2026 届秋招起阿里已在流程中加入 **AI Coding 能力考察** [citation:新浪科技·大厂校招AI岗报道](https://finance.sina.com.cn/tech/2025-09-24/doc-inekfxps8417327.shtml)。
+
+## 4. 薪资带宽估计（仅汇总公开数据）
+
+以下均为公开渠道汇总，非官方口径，不同届次/岗位差异大：
+
+- **通用带宽**：牛客校招风向标显示，阿里技术岗应届生总包集中在 **25–35 万**，白菜价 offer 约 25.5 万起 [citation:牛客·校招风向标](https://www.nowcoder.com/link.html?id=688749809875820544)。
+- **AI 岗溢价**：投中网援引行业报告称 AI 岗平均招聘月薪 4.7 万起，腾讯/阿里 2025 年校招于 8 月初开放、AI 人才竞争加剧 [citation:投中网·AI岗平均月薪4.7万](https://www.chinaventure.com.cn/article/78-20250903-387870.html)。
+- **2026 届传闻级数据**：脉脉风格汇总帖称阿里 2026 届算法白菜 45 万、SP 60 万，作者自注"道听途说" [citation:掘金·2026大厂应届生起薪](https://juejin.cn/post/7657009566030561280)。
+- **历史锚点**：24 届阿里国际算法工程师 offer 31K×16（约 50 万），签字费 1–5 万与"月包×月数"组合机制并存 [citation:智源社区·24届薪资汇总](https://hub.baai.ac.cn/view/33611)[citation:甘柴面试经验网·阿里薪资结构](https://gankinterview.cn/interview-questions/alibaba)。
+- **综合估计（推断）**：普通档约 25–35 万，AI/Agent 热门岗 SP 档 40–50 万+，阿里星等顶尖计划显著更高；推断依据为上述白菜价、SP 案例、签字费机制的组合，以及 27 届 AI 人才争夺白热化的行业背景 [citation:劳动报](https://www.51ldb.com/shsldb/zc/content/019fcba0c1ffc001000066d533acd97d.html)。**27 届实际 offer 数据尚未成规模流出，此区间时效性弱、置信度中等。**
+
+## 5. 与目标简历的差距分析
+
+**候选人画像**：2027 届本科·北邮信息工程；Java 后端双项目（DDD 智能视频监控平台：SIP 接入、FFmpeg 并发转码、Milvus+大模型 API 问答、SSE 流式；秒杀系统：Redis 三层拦截、RabbitMQ 异步下单、Redisson、G1 调优）；精读 PocketFlow 与 LangGraph 执行引擎源码（通道模型/superstep/批量写入）；deer-flow 与 OpenManus 二开进行中；无 Memory 系统、RAG 优化、强化学习的项目级实践。
+
+**匹配面（可直接放简历的位置）**：
+- Java 后端 + 中间件深度与阿里 Java 生态高度契合——SAA 本身就是 Spring 体系的 Agent 框架 [citation:Spring AI Alibaba 官网](https://java2ai.com)，"用 Spring 技术栈做 Agent"叙事成立；秒杀项目对位中间件场景题（分布式 Session/缓存/锁类热题）[citation:面试鸭](https://www.mianshiya.com/)。
+- 视频监控平台的"Milvus 向量检索 + LLM API + SSE 流式输出"可讲述为端到端 AI 应用链路，对位"意图识别→调用大模型 API"类架构场景题 [citation:掘金·架构图面经](https://juejin.cn/post/7685895088702308392)。
+- LangGraph/PocketFlow 源码级理解是同类候选人中的稀缺项，建议在自我介绍与项目深挖中主动对位 SAA Graph/AgentScope 的编排机制，展示"读过引擎→能评价框架"的迁移能力 [citation:AI工具集·AgentScope](https://www.ai-bot.cn/agentscope/)。
+
+**主要差距与补齐动作**：
+1. **Memory 系统（缺口，优先级高）**：企业级 Agent 平台普遍将记忆列为核心模块 [citation:AI工具集·AgentScope](https://www.ai-bot.cn/agentscope/)。建议在 deer-flow 二开中直接实现短期/长期记忆（对话摘要+向量持久化），可复用你已有的 Milvus 经验，把"集成级接触"升级为"设计级实践"。
+2. **RAG 深度（半缺口）**：当前仅 Milvus 集成级。按公开技能链至少补齐 chunking 策略、混合检索/重排、评估闭环三件套 [citation:阿里云开发者社区·技能链](https://developer.aliyun.com/article/1764264)，并回写进视频监控平台的问答模块作为量化结果。
+3. **强化学习（概念缺口）**：Agent 研发（应用侧）校招对 RL 要求低于算法岗，但大模型序列一面已出现 PPO/GRPO/DPO 级提问 [citation:牛客·百度面经参照](https://www.nowcoder.com/discuss/928763560312700928)。建议以概念级理解+能对比讲清为目标，不必投入训练实践。**此为推断**：阿里面经快照中未见对校招 Agent 岗强制 RL 实操的证据。
+4. **Python 生态表达（推断缺口）**：候选人主力 Java，而 Agent 岗工程实践多围绕 Python/LangChain 系展开（deer-flow/OpenManus 二开恰好可作为 Python 能力证据，需确保可运行、可演示）[citation:牛客·Agent 开发全栈工程师帖](https://www.nowcoder.com/discuss/353154474258669568)。
+5. **流程准备**：AI Coding 考察已是流程组成部分 [citation:新浪科技](https://finance.sina.com.cn/tech/2025-09-24/doc-inekfxps8417327.shtml)，需与八股并行刷题。
+
+**投递建议（推断，依据第 2 章时间线）**：正式批 8 月 4 日已启动、实习/提前批渠道已运转数月，建议立即网申并按"ATH 系（Token Foundry/千问/悟空）→ 阿里云 → 淘天"梯度投递；阿里星可同步争取但本科+当前项目深度命中概率偏低，以普通/SP 档为主预期。
+
+---
+
+## 局限性说明
+
+1. **核验方式**：本次调研中网页抓取工具连续 3 次连接超时，按协议放弃逐页核验，全部引用基于搜索引擎返回的快照（标题+摘要），未能逐一打开原文确认上下文与发布日期，个别快照（如 linux.do、掘金）的原文细节可能存在偏差。
+2. **推断内容**：第 2 章"9–10 月集中面试"窗口、第 4 章综合薪资区间与"27 届 offer 未成规模流出"、第 5 章差距 3/4（RL 非强制、Python 缺口）均为推断，依据已在正文标注。
+3. **时效性**：薪资数据主要来自 2024–2026 届公开样本，对 2027 届仅具参考价值；ATH 事业群 2026 年 3 月才成立，7 月仍有组织调整，业务线画像可能在投递季内继续变动；Qwen 版本与开源动态迭代极快，报告中模型名称以快照时点为准。
+4. **样本偏差**：面经章节公开样本量小且部分为竞对/历史内容（已标注），不能代表阿里 Agent 岗面试全貌；"Agent 开发全栈工程师"更名信息来自单一候选人帖子。

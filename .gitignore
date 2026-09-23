@@ -69,3 +69,7 @@ config.yaml.bak
 
 # Monocle agent-observability trace output (local file exporter)
 .monocle/
+
+# job-intel: evals/logs holds sanitized smoke summaries (evidence), unlike runtime logs/
+!evals/logs/
+!evals/logs/**
