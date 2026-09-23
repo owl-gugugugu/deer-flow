@@ -1,0 +1,4 @@
+company,position,report_file,citations_total,citations_reachable,citations_dead,citations_unreachable,reachability_rate,citations_effective,effectiveness_rate,structure_completeness,violations
+甲公司,Agent 研发工程师,eval-report-a.md,5,3,0,2,0.6,2,0.4,1.0,
+乙公司,Agent 应用工程师,eval-report-b.md,5,3,0,2,0.6,2,0.4,1.0,
+SUMMARY,,,10,6,,,0.6,4,0.4,1.0,
